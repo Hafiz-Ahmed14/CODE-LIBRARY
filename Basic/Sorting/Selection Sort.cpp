@@ -7,13 +7,13 @@ int main()
     int n; cin >> n;
     int a[n];
 
-    for(int i = 0; i < n; i++) {
+    for(int i = 1; i <= n; i++) {
         cin >> a[i];
     } 
 
-    for(int i = 1; i < n; i++) {
+    for(int i = 1; i <= n; i++) {
         int min_index = i;
-        for(int j = i + 1; j < n; j++) {
+        for(int j = i + 1; j <= n; j++) {
             if(a[j] < a[min_index]) {
                 min_index = j;
             }
@@ -21,7 +21,7 @@ int main()
         swap(a[i], a[min_index]);
     }
 
-    for(int i = 0; i < n; i++) {
+    for(int i = 1; i <= n; i++) {
         cout << a[i] << ' ';
     } 
             
